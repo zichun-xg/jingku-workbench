@@ -101,7 +101,7 @@ class Highlight(Base):
     title: Mapped[str] = mapped_column(String(500), default="")
     copy_advice: Mapped[str] = mapped_column(Text, default="")  # 文案上可以怎么写
     visual_advice: Mapped[str] = mapped_column(Text, default="")  # 画面上建议展示什么
-    audience: Mapped[str] = mapped_column(String(200), default="")  # 受众，如国企领导
+    audience: Mapped[str] = mapped_column(String(200), default="")  # 受众，如行业决策人
     in_library: Mapped[bool] = mapped_column(Boolean, default=True)  # 是否进入灵感库
     created_at: Mapped[datetime] = mapped_column(DateTime, default=_now)
     updated_at: Mapped[datetime] = mapped_column(DateTime, default=_now, onupdate=_now)

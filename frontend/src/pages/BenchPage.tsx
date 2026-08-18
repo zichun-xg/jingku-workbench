@@ -279,7 +279,7 @@ export default function BenchPage() {
                       <input
                         value={hl.audience || ""}
                         onChange={(e) => setHl({ ...hl, audience: e.target.value })}
-                        placeholder="如：国企分管领导"
+                        placeholder="如：行业决策人"
                       />
                     </div>
                     <div className="field">

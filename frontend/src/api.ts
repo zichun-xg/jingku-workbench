@@ -78,7 +78,7 @@ export const api = {
 };
 
 export const GENRE_LABEL: Record<string, string> = {
-  b2b_demo: "B端演示",
+  b2b_demo: "产品演示",
   corp_promo: "企业宣传片",
   other: "其他成片",
 };

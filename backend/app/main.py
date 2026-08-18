@@ -14,7 +14,7 @@ from .routers.videos import router as videos_router
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s %(message)s")
 
-app = FastAPI(title="镜库", description="政企视频拉片与灵感库工作台")
+app = FastAPI(title="镜库", description="视频拉片与灵感库工作台")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://127.0.0.1:5173", "http://localhost:5173"],

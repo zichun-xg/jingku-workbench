@@ -74,12 +74,12 @@ export default function VideosPage() {
       <header className="topbar">
         <div>
           <h1>
-            片库 <span className="sub">把优秀政企成片收进来，再送去拉片</span>
+            片库 <span className="sub">把优秀成片收进来，再送去拉片</span>
           </h1>
         </div>
         <div className="actions">
           <select value={genre} onChange={(e) => setGenre(e.target.value)}>
-            <option value="b2b_demo">B端产品演示</option>
+            <option value="b2b_demo">产品演示</option>
             <option value="corp_promo">企业宣传片</option>
             <option value="other">其他成片</option>
           </select>
@@ -116,7 +116,7 @@ export default function VideosPage() {
           {busy ? "正在处理…" : "把视频拖到这里，或点右上角导入。片种用右上角下拉框先选好。"}
         </div>
         {items.length === 0 ? (
-          <div className="empty">片库还是空的。先丢进一条你觉得拍得好的政企视频。</div>
+          <div className="empty">片库还是空的。先丢进一条你觉得拍得好的视频。</div>
         ) : (
           <div className="grid-cards">
             {items.map((v) => (

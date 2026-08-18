@@ -46,7 +46,7 @@ export default function InspirationPage() {
           />
           <select value={genre} onChange={(e) => setGenre(e.target.value)}>
             <option value="">全部片种</option>
-            <option value="b2b_demo">B端演示</option>
+            <option value="b2b_demo">产品演示</option>
             <option value="corp_promo">企业宣传片</option>
             <option value="other">其他成片</option>
           </select>
@@ -58,7 +58,7 @@ export default function InspirationPage() {
               </option>
             ))}
           </select>
-          <input placeholder="受众，如 国企领导" value={audience} onChange={(e) => setAudience(e.target.value)} />
+          <input placeholder="受众，如 行业决策人" value={audience} onChange={(e) => setAudience(e.target.value)} />
           <button className="btn" onClick={load}>
             筛选
           </button>
