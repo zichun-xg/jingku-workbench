@@ -8,7 +8,11 @@ export default function App() {
   return (
     <div className="app">
       <header className="mast">
-        <div className="brand">镜库</div>
+        <div className="brand">
+          <span className="brand-mark" aria-hidden />
+          <span className="brand-name">镜库</span>
+          <span className="brand-sub">视频拉片工作台</span>
+        </div>
         <nav className="nav">
           <NavLink to="/" end>
             片库
